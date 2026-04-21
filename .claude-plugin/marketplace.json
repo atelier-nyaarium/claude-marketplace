@@ -1,0 +1,25 @@
+{
+	"name": "atelier-nyaarium",
+	"description": "Umbrella marketplace for Nyaarium's Claude Code plugins.",
+	"owner": {
+		"name": "Nyaarium"
+	},
+	"plugins": [
+		{
+			"name": "switchboard",
+			"description": "Cross-team communication, game client connector, and devcontainer orchestration for agent teams.",
+			"source": {
+				"source": "github",
+				"repo": "atelier-nyaarium/switchboard"
+			}
+		},
+		{
+			"name": "nyaaskills",
+			"description": "Shared agents and skills for nyaarium projects. Testability, quality, code analysis, debugging, team collaboration.",
+			"source": {
+				"source": "github",
+				"repo": "atelier-nyaarium/nyaaskills"
+			}
+		}
+	]
+}
