@@ -13,7 +13,7 @@ claude plugin install nyaaskills@atelier-nyaarium
 
 Autoupdate is a settings flag. One-line jq version:
 
-jq '. * {extraKnownMarketplaces: {"atelier-nyaarium": {autoUpdate: true}}}' ~/.claude/settings.json | sponge ~/.claude/settings.json
+tmp=$(mktemp) && jq '. * {extraKnownMarketplaces: {"atelier-nyaarium": {autoUpdate: true}}}' ~/.claude/settings.json > "$tmp" && mv "$tmp" ~/.claude/settings.json
 ```
 
 ## Plugins
