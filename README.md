@@ -5,9 +5,15 @@ Umbrella Claude Code plugin marketplace for Nyaarium's plugins.
 ## Install
 
 ```
-/plugin marketplace add atelier-nyaarium/claude-marketplace
-/plugin install switchboard@atelier-nyaarium
-/plugin install nyaaskills@atelier-nyaarium
+claude plugin marketplace add atelier-nyaarium/claude-marketplace
+
+claude plugin install switchboard@atelier-nyaarium
+
+claude plugin install nyaaskills@atelier-nyaarium
+
+Autoupdate is a settings flag. One-line jq version:
+
+jq '. * {extraKnownMarketplaces: {"atelier-nyaarium": {autoUpdate: true}}}' ~/.claude/settings.json | sponge ~/.claude/settings.json
 ```
 
 ## Plugins
