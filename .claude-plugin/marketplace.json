@@ -20,6 +20,14 @@
 				"source": "github",
 				"repo": "atelier-nyaarium/nyaaskills"
 			}
+		},
+		{
+			"name": "lexicon",
+			"description": "Symbol-level code understanding for agents and editors. Structure, references, types, rename planning, and a knowledge layer that refuses uncited answers.",
+			"source": {
+				"source": "github",
+				"repo": "atelier-nyaarium/nyaa-lexicon"
+			}
 		}
 	]
 }
